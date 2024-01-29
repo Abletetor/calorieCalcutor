@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+      <title>Calorie-Counter</title>
+      <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+      <main>
+            <h1>Calorie Counter</h1>
+            <div class="container">
+                  <form action="" id="calorie-counter">
+                        <label for="budget">Budget</label>
+                        <input
+                         type="number" name="budget" id="budget" min="0" placeholder="Daily calorie budget" >
+
+                         <!--calories section start here-->
+                         <fieldset id="breakfast">
+                              <legend>Breakfast</legend>
+                              <div class="input-container"></div>
+                         </fieldset>
+                         <fieldset id="lunch">
+                              <legend>Lunch</legend>
+                              <div class="input-container"></div>
+                         </fieldset>
+                         <fieldset id="dinner">
+                              <legend>Dinner</legend>
+                              <div class="input-container"></div>
+                         </fieldset>
+                         <fieldset id="snacks">
+                              <legend>Snacks</legend>
+                              <div class="input-container"></div>
+                         </fieldset>
+                         <fieldset id="exercise">
+                              <legend>Exercise</legend>
+                              <div class="input-container"></div>
+                         </fieldset>
+                         <!--calories section ends here-->
+
+                         <!--controllers section start here-->
+                         <div class="controls">
+                              <span>
+                                    <label for="entry-dropdown">Add food or exercise: </label>
+                                    <select name="" id="entry-dropdown" name="options">
+                                          <option value="breakfast" selected>Breakfast</option>
+                                          <option value="lunch">Lunch</option>
+                                          <option value="dinner">Dinner</option>
+                                          <option value="snacks">Snacks</option>
+                                          <option value="exercise">Exercise</option>
+                                    </select>
+                                    <button type="button" id="add-entry">Add Entry</button>
+                              </span>
+                         </div>
+                         <div>
+                              <button type="submit">Calculate Remaining Calories</button>
+                              <button type="button" id="clear">Clear</button>
+                         </div>
+                         <!--controllers section ends here-->
+                  </form>
+                  <div class="output hide"  id="output"></div>
+            </div>
+      </main>
+      <script src="/script.js"></script>
+</body>
+</html>

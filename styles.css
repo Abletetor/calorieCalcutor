@@ -1,0 +1,71 @@
+body {
+      font-family: "Poppins", "Lato";
+      font-size: 16.5px;
+      background-color: #1b1b32;
+      color: #f5f5f5;
+}
+
+h1 {
+      text-align: center;
+      color: #79b7b3;
+}
+
+.container {
+      width: 90%;
+      max-width: 680px;
+}
+
+h1, .container, .output {
+      margin: 20px auto;
+}
+
+label, legend {
+      font-weight: bold;
+}
+
+.input-container {
+      display: flex;
+      flex-direction: column;
+}
+
+button {
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+      background-color: #79b7b3;
+      border: 2px solid #79b7b3;
+      color: #f5f5f5;
+      min-height: 24px;
+}
+
+select, input {
+      min-height: 24px;
+      color: #1b1b32;
+}
+
+fieldset, label, input, select, button {
+      margin-bottom: 10px;
+}
+
+.output {
+      border: 2px solid #f5f5f5;
+      padding: 10px;
+      text-align: center;
+}
+
+.hide {
+      display: none;
+}
+
+.output span {
+      font-weight: bold;
+      font-size: 1.2em;
+}
+
+.suplus {
+      color: #8dd59e;
+}
+
+.deficit {
+      color: #79b7b3;
+}
